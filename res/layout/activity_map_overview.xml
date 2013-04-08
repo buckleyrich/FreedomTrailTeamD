@@ -1,17 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?>
-  <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:map="http://schemas.android.com/apk/res-auto"
-  android:id="@+id/map"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  android:name="com.google.android.gms.maps.MapFragment"
-  map:cameraTargetLat="42.36669"
-  map:cameraTargetLng="-71.058755"
-  map:cameraZoom="14.7"
-  map:mapType="normal"
-  map:uiCompass="true"
-  map:uiRotateGestures="true"
-  map:uiScrollGestures="true"
-  map:uiTiltGestures="true"
-  map:uiZoomControls="false"
-  map:uiZoomGestures="true"/>
+<!--   <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:map="http://schemas.android.com/apk/res-auto"
+      android:id="@+id/map"
+	  android:name="com.google.android.gms.maps.MapFragment"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      map:cameraTargetLat="42.36669"
+      map:cameraTargetLng="-71.058755"
+      map:cameraZoom="14.7"
+      map:mapType="normal"
+      map:uiCompass="true"
+      map:uiRotateGestures="true"
+      map:uiScrollGestures="true"
+      map:uiTiltGestures="true"
+      map:uiZoomControls="false"
+      map:uiZoomGestures="true" /> -->
+  
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapOverview" >
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.MapFragment" />
+
+</RelativeLayout> 
